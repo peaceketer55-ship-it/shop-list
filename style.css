@@ -1,0 +1,112 @@
+```css
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 30px 15px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #dbeafe, #f0fdf4);
+  color: #1f2937;
+}
+
+.container {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px #00000015;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #166534;
+}
+
+p {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input {
+  flex: 1 1 150px;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #15803d;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+#clear-button {
+  background: #dc2626;
+}
+
+#mark-button {
+  background: #2563eb;
+}
+
+#shopping-list {
+  padding: 0;
+  list-style: none;
+}
+
+#shopping-list li {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+  padding: 12px;
+  background: #f1f5f9;
+  border-radius: 8px;
+}
+
+.item-name {
+  flex: 1;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+.purchased .item-name {
+  text-decoration: line-through;
+  color: #64748b;
+}
+
+#message {
+  color: #166534;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 16px;
+  }
+}
+```
